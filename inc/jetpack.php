@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package covermy
+ * @package wpstartertheme
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function covermy_jetpack_setup() {
+function wpstartertheme_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'covermy_infinite_scroll_render',
+			'render'    => 'wpstartertheme_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function covermy_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'covermy-style',
+				'stylesheet' => 'wpstartertheme-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,13 +48,13 @@ function covermy_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'covermy_jetpack_setup' );
+add_action( 'after_setup_theme', 'wpstartertheme_jetpack_setup' );
 
-if ( ! function_exists( 'covermy_infinite_scroll_render' ) ) :
+if ( ! function_exists( 'wpstartertheme_infinite_scroll_render' ) ) :
 	/**
 	 * Custom render function for Infinite Scroll.
 	 */
-	function covermy_infinite_scroll_render() {
+	function wpstartertheme_infinite_scroll_render() {
 		while ( have_posts() ) {
 			the_post();
 			if ( is_search() ) :

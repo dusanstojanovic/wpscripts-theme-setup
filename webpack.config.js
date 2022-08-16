@@ -17,6 +17,7 @@ module.exports = {
 	...{
 		entry: {
 			main: path.resolve(process.cwd(), "src/js", "main.js"),
+			separate: path.resolve(process.cwd(), "src/js", "separate.js"),
 			style: path.resolve(process.cwd(), "src/scss", "style.scss"),
 		},
 		module: {

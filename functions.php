@@ -1,10 +1,10 @@
 <?php
 /**
- * covermy functions and definitions
+ * wpstartertheme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package covermy
+ * @package wpstartertheme
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -19,14 +19,14 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function covermy_setup() {
+function wpstartertheme_setup() {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on covermy, use a find and replace
-		* to change 'covermy' to the name of your theme in all the template files.
+		* If you're building a theme based on wpstartertheme, use a find and replace
+		* to change 'wpstartertheme' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain( 'covermy', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'wpstartertheme', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -49,7 +49,7 @@ function covermy_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'covermy' ),
+			'menu-1' => esc_html__( 'Primary', 'wpstartertheme' ),
 		)
 	);
 
@@ -74,7 +74,7 @@ function covermy_setup() {
 	add_theme_support(
 		'custom-background',
 		apply_filters(
-			'covermy_custom_background_args',
+			'wpstartertheme_custom_background_args',
 			array(
 				'default-color' => 'ffffff',
 				'default-image' => '',
@@ -100,7 +100,7 @@ function covermy_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'covermy_setup' );
+add_action( 'after_setup_theme', 'wpstartertheme_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -109,22 +109,22 @@ add_action( 'after_setup_theme', 'covermy_setup' );
  *
  * @global int $content_width
  */
-function covermy_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'covermy_content_width', 640 );
+function wpstartertheme_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'wpstartertheme_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'covermy_content_width', 0 );
+add_action( 'after_setup_theme', 'wpstartertheme_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function covermy_widgets_init() {
+function wpstartertheme_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'covermy' ),
+			'name'          => esc_html__( 'Sidebar', 'wpstartertheme' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'covermy' ),
+			'description'   => esc_html__( 'Add widgets here.', 'wpstartertheme' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -132,16 +132,17 @@ function covermy_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'covermy_widgets_init' );
+add_action( 'widgets_init', 'wpstartertheme_widgets_init' );
 
 
 
-function covermy_scripts() {
-    wp_enqueue_style('covermy-style', get_template_directory_uri() . '/build/style.css', array(), filemtime(get_template_directory() . '/build/style.css'), false);
-    wp_enqueue_script('covermy-js', get_template_directory_uri() . '/build/main.js', array('jquery'), '', true);
-    // wp_enqueue_script('covermy-plugins', get_template_directory_uri() . '/dist/js/plugins.min.js', array('jquery'), '', true);
+function wpstartertheme_scripts() {
+    wp_enqueue_style('wpstartertheme-style', get_template_directory_uri() . '/build/style.css', array(), filemtime(get_template_directory() . '/build/style.css'), false);
+    wp_enqueue_script('main', get_template_directory_uri() . '/build/main.js', '', '', true);
+    wp_enqueue_script('separate', get_template_directory_uri() . '/build/separate.js', array('jquery'), '', true);
+    // wp_enqueue_script('wpstartertheme-plugins', get_template_directory_uri() . '/dist/js/plugins.min.js', array('jquery'), '', true);
 }
-add_action( 'wp_enqueue_scripts', 'covermy_scripts' );
+add_action( 'wp_enqueue_scripts', 'wpstartertheme_scripts' );
 
 /**
  * Implement the Custom Header feature.
