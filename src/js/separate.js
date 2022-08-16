@@ -1,4 +1,3 @@
-import $ from "jquery";
+import $ from 'jquery';
 
-$("body").addClass("zzzzzzzzzzzzz");
-console.log("Zzzzzzzzzz");
+$('body').addClass('zzzzzzzzzzzzz');
