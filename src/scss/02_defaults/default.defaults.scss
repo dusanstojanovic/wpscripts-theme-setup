@@ -7,7 +7,7 @@ html {
 	font-family: var(--ff--primary);
 	font-weight: normal;
 	background: #fff;
-	color: var(--c-grey--dark);
+	color: var(--c-grey-900);
 	overflow-x: hidden;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -148,7 +148,7 @@ hr {
 	overflow: hidden;
 	clear: both;
 	margin: var(--base-spacing-unit, 1rem) 0;
-	background: var(--c-grey--light, #ccc);
+	background: var(--c-grey-300, #ccc);
 	height: 1px;
 	border: 0;
 }

@@ -50,21 +50,20 @@
 
 	--c-accent: var(--c-accent-500);
 
-	--c-grey--dark: #091e2c;
-	--c-grey: #a1aeb7;
-	--c-grey--light: #eee;
-	--c-grey--transparent: rgba(9, 30, 44, 0.08);
+	--c-grey-50: #f0f3f5;
+	--c-grey-100: #e5e8eb;
+	--c-grey-200: #c5cdd3;
+	--c-grey-300: #9daab4;
+	--c-grey-400: #778692;
+	--c-grey-500: #5d6b79;
+	--c-grey-600: #4b5763;
+	--c-grey-700: #3e4751;
+	--c-grey-800: #363e45;
+	--c-grey-900: #25292d;
 
 	/*Link color*/
-	--c-link: #60829a;
-	--c-link-hover: #ff5944;
-
-	/*------------------------------------*\
-        #Fonts
-    \*------------------------------------*/
-	--ff--primary: "Metropolis", sans-serif;
-	--ff--secondary: "Metropolis", sans-serif;
-	--ff--mono: Monaco, Consolas, "Lucida Console", monospace;
+	--c-link: var(--c-brand-500);
+	--c-link-hover: var(--c-brand-700);
 
 	/*------------------------------------*\
         #Z-indexes
@@ -75,6 +74,13 @@
 	--z-beach: 1;
 	--z-sea: 0;
 	--z-deadsea: -1;
+
+	/*------------------------------------*\
+        #Fonts
+    \*------------------------------------*/
+	--ff--primary: "Metropolis", sans-serif;
+	--ff--secondary: "Metropolis", sans-serif;
+	--ff--mono: Monaco, Consolas, "Lucida Console", monospace;
 }
 
 /*---------------------------------------
