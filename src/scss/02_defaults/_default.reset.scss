@@ -2,12 +2,12 @@
     #Additional reset styles and html elements defaults
 \*------------------------------------*/
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 html,
@@ -79,38 +79,38 @@ time,
 mark,
 audio,
 video {
-    text-align: left;
+	text-align: left;
 }
 
 html,
 body {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 textarea {
-    resize: vertical;
+	resize: vertical;
 }
 textarea[contenteditable] {
-    -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 code {
-    line-height: 1;
-    font-family: Monaco, Consolas, 'Bitstream Vera Sans Mono', 'Andale Mono', 'DejaVu Sans Mono', 'Lucida Console', monospace;
-    font-size: 0.9em;
+	line-height: 1;
+	font-family: Monaco, Consolas, "Bitstream Vera Sans Mono", "Andale Mono", "DejaVu Sans Mono", "Lucida Console", monospace;
+	font-size: 0.9em;
 }
 
 img,
 svg {
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    font-style: italic;
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	font-style: italic;
 }
 a {
-    max-width: 100%;
+	max-width: 100%;
 }
 /* img[alt=""],
 img:not([alt]) {
@@ -118,54 +118,54 @@ img:not([alt]) {
 } */
 
 svg {
-    fill: currentcolor;
+	fill: currentcolor;
 }
 
 /* google maps images */
 .gm-style img {
-    max-width: none;
+	max-width: none;
 }
 /*
 img[width],
 img[height]{max-width: none;}
 */
 figure {
-    max-width: 100% !important;
-    margin: 0 0 1em;
+	max-width: 100% !important;
+	margin: 0 0 1em;
 }
 figure > img {
-    display: block;
+	display: block;
 }
 
 /* ----------- */
 object,
 embed,
 video {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 /* ----------- */
 textarea:active,
 textarea:focus {
-    cursor: text;
-    outline: none;
+	cursor: text;
+	outline: none;
 }
 
 abbr[title],
 dfn[title] {
-    cursor: help;
+	cursor: help;
 }
 u,
 ins {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
 }

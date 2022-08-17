@@ -14,11 +14,13 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	-o-font-smoothing: antialiased;
+	scroll-behavior: initial;
 }
 html,
 body {
 	text-align: center;
-	height: 100%;
+	width: 100%;
+	min-height: 100%;
 }
 
 // body {
