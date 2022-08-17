@@ -24,23 +24,36 @@
 	/*---------------------------------------
         Colors
     ---------------------------------------*/
-	--c-brand: #ff5944;
-	--c-brand-sec: #ff6f61;
-	// --c-brand-sec: #ff04a7;
+	--c-brand-50: #f9fce9;
+	--c-brand-100: #f1f8cf;
+	--c-brand-200: #e1f1a5;
+	--c-brand-300: #cbe670;
+	--c-brand-400: #bada55; //
+	--c-brand-500: #96bc26;
+	--c-brand-600: #74961a;
+	--c-brand-700: #587219;
+	--c-brand-800: #475b19;
+	--c-brand-900: #3d4d1a;
+
+	--c-brand: var(--c-brand-400);
+
+	--c-accent-50: #fcf3fa;
+	--c-accent-100: #fae9f8;
+	--c-accent-200: #f6d4f0;
+	--c-accent-300: #f1b0e5;
+	--c-accent-400: #e680d1;
+	--c-accent-500: #da55bb;
+	--c-accent-600: #c83aa0;
+	--c-accent-700: #ad2984;
+	--c-accent-800: #8f256d;
+	--c-accent-900: #78235c;
+
+	--c-accent: var(--c-accent-500);
 
 	--c-grey--dark: #091e2c;
 	--c-grey: #a1aeb7;
 	--c-grey--light: #eee;
 	--c-grey--transparent: rgba(9, 30, 44, 0.08);
-
-	/*Usual colors*/
-	--c-white: #fff;
-	--c-black: #000;
-	--c-blue: #60829a;
-	--c-green: #3cbc21;
-	--c-red: #f77150;
-	--c-orange: #ffc303;
-	--c-yellow: #ffec04;
 
 	/*Link color*/
 	--c-link: #60829a;

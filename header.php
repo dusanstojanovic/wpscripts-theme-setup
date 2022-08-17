@@ -21,6 +21,11 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<button class="o-btn">default</button>
+<button class="o-btn  o-btn--ghost">default ghost</button>
+<button class="o-btn  o-btn--accent">accent</button>
+<button class="o-btn  o-btn--ghost  o-btn--accent">accent ghost</button>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wpstartertheme' ); ?></a>

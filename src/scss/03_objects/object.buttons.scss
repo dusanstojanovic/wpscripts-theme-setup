@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    #Buttons
+\*------------------------------------*/
+.o-btn {
+	--color: var(--c-brand);
+	--color-hover: var(--c-brand-500);
+
+	appearance: none;
+	display: inline-block;
+	line-height: normal;
+	cursor: pointer;
+
+	padding: var(--btn-padding-v) var(--btn-padding-h);
+	border: var(--btn-border-width) solid var(--color);
+	border-radius: var(--base-border-radius);
+	background-color: var(--color);
+	font-size: var(--base-font-size);
+	color: var(--c-grey--dark);
+
+	&:active {
+		position: relative;
+		top: 1px;
+	}
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+		background-color: var(--color-hover);
+		border-color: var(--color-hover);
+	}
+
+	/*---------------------------------------
+		Variations
+	---------------------------------------*/
+	/* block button */
+	&--block {
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+
+	/* ghost */
+	&--ghost {
+		background-color: transparent;
+		color: var(--color);
+
+		&:hover {
+			background-color: transparent;
+			color: var(--color-hover);
+		}
+	}
+
+	/*
+	* Color variations
+	*/
+	/* accent buttton */
+	&--accent {
+		--color: var(--c-accent);
+		--color-hover: var(--c-accent-700);
+	}
+}
