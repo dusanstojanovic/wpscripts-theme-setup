@@ -1,0 +1,143 @@
+/*------------------------------------*\
+    #Margins
+\*------------------------------------*/
+/* margin reset */
+.u-mrg--reset {
+	> :first-child {
+		margin-top: 0;
+	}
+	> :last-child {
+		margin-bottom: 0;
+	}
+}
+// .u-mrg--1\/2 {
+//     margin: calc(var(--base-spacing-unit, 1rem) / 2) !important;
+// }
+// .u-mrg--t\/2 {
+//     margin-top: calc(var(--base-spacing-unit, 1rem) / 2) !important;
+// }
+// .u-mrg--r\/2 {
+//     margin-right: calc(var(--base-spacing-unit, 1rem) / 2) !important;
+// }
+// .u-mrg--b\/2 {
+//     margin-bottom: calc(var(--base-spacing-unit, 1rem) / 2) !important;
+// }
+// .u-mrg--l\/2 {
+//     margin-left: calc(var(--base-spacing-unit, 1rem) / 2) !important;
+// }
+
+/* margin increments */
+// @for $i from 0 through 4 {
+//     .u-mrg--x#{$i} {
+//         margin: calc(var(--base-spacing-unit, 1rem) *#{$i}) !important;
+//     }
+//     .u-mrg--tx#{$i} {
+//         margin-top: calc(var(--base-spacing-unit, 1rem) *#{$i}) !important;
+//     }
+//     .u-mrg--bx#{$i} {
+//         margin-bottom: calc(var(--base-spacing-unit, 1rem) *#{$i}) !important;
+//     }
+//     .u-mrg--lx#{$i} {
+//         margin-left: calc(var(--base-spacing-unit, 1rem) *#{$i}) !important;
+//     }
+//     .u-mrg--rx#{$i} {
+//         margin-right: calc(var(--base-spacing-unit, 1rem) *#{$i}) !important;
+//     }
+// }
+
+/*------------------------------------*\
+    #Paddings
+\*------------------------------------*/
+// .u-pdn--1\/2 {
+//     padding: calc(var(--base-spacing-unit, 1rem) / 2) !important;
+// }
+// .u-pdn--t\/2 {
+//     padding-top: calc(var(--base-spacing-unit, 1rem) / 2) !important;
+// }
+// .u-pdn--r\/2 {
+//     padding-right: calc(var(--base-spacing-unit, 1rem) / 2) !important;
+// }
+// .u-pdn--b\/2 {
+//     padding-bottom: calc(var(--base-spacing-unit, 1rem) / 2) !important;
+// }
+// .u-pdn--l\/2 {
+//     padding-left: calc(var(--base-spacing-unit, 1rem) / 2) !important;
+// }
+
+/* padding increments */
+// @for $i from 0 through 4 {
+//     .u-pdn--x#{$i} {
+//         padding: calc(var(--base-spacing-unit, 1rem) * #{$i}) !important;
+//     }
+//     .u-pdn--tx#{$i} {
+//         padding-top: calc(var(--base-spacing-unit, 1rem) * #{$i}) !important;
+//     }
+//     .u-pdn--bx#{$i} {
+//         padding-bottom: calc(var(--base-spacing-unit, 1rem) * #{$i}) !important;
+//     }
+//     .u-pdn--lx#{$i} {
+//         padding-left: calc(var(--base-spacing-unit, 1rem) * #{$i}) !important;
+//     }
+//     .u-pdn--rx#{$i} {
+//         padding-right: calc(var(--base-spacing-unit, 1rem) * #{$i}) !important;
+//     }
+// }
+
+/*------------------------------------*\
+    #Text utilities
+\*------------------------------------*/
+.u-txt--center {
+	text-align: center !important;
+}
+.u-txt--left {
+	text-align: left !important;
+}
+.u-txt--right {
+	text-align: right !important;
+}
+/* text transformations */
+.u-txt--up {
+	text-transform: uppercase !important;
+}
+
+/* truncate text */
+.u-txt--truncate {
+	max-width: 100%;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	white-space: nowrap !important;
+	word-wrap: normal !important;
+}
+/* hyphenate text */
+.u-txt--hyphenate {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+
+/*------------------------------------*\
+    #Screen reader visible only, hidden on screens
+\*------------------------------------*/
+.u-srt {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+/*------------------------------------*\
+    ##Other utilities
+\*------------------------------------*/
+/* no animation flicker in webkit (future will-change)*/
+.u-noflicker {
+	backface-visibility: hidden;
+	perspective: 1000;
+	transform: translateZ(0);
+	transform-style: preserve-3d;
+}

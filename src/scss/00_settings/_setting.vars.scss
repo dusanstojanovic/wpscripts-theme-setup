@@ -1,0 +1,97 @@
+/*------------------------------------*\
+    #Basic values
+\*------------------------------------*/
+:root {
+	--base-font-size: 16px;
+	--base-line-height: 1.5;
+	--base-spacing-unit: 24px;
+	--base-border-radius: 4px;
+	--base-transition-time: 0.075s;
+	--base-timing-functon: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+	/* buttons and forms vars */
+	--form-border-width: 1px;
+	--form-padding: 10px;
+	--form-sm-divisor: 1.6;
+	--form-lg-multiplier: 2.4;
+
+	--btn-border-width: 1px;
+	--btn-padding-v: 10px;
+	--btn-padding-h: 24px;
+	--btn-sm-divisor: 1.6;
+	--btn-lg-multiplier: 2.4;
+
+	/*---------------------------------------
+        Colors
+    ---------------------------------------*/
+	--c-brand: #ff5944;
+	--c-brand-sec: #ff6f61;
+	// --c-brand-sec: #ff04a7;
+
+	--c-grey--dark: #091e2c;
+	--c-grey: #a1aeb7;
+	--c-grey--light: #eee;
+	--c-grey--transparent: rgba(9, 30, 44, 0.08);
+
+	/*Usual colors*/
+	--c-white: #fff;
+	--c-black: #000;
+	--c-blue: #60829a;
+	--c-green: #3cbc21;
+	--c-red: #f77150;
+	--c-orange: #ffc303;
+	--c-yellow: #ffec04;
+
+	/*Link color*/
+	--c-link: #60829a;
+	--c-link-hover: #ff5944;
+
+	/*------------------------------------*\
+        #Fonts
+    \*------------------------------------*/
+	--ff--primary: "Metropolis", sans-serif;
+	--ff--secondary: "Metropolis", sans-serif;
+	--ff--mono: Monaco, Consolas, "Lucida Console", monospace;
+
+	/*------------------------------------*\
+        #Z-indexes
+    \*------------------------------------*/
+	--z-everest: 100;
+	--z-alps: 50;
+	--z-hill: 10;
+	--z-beach: 1;
+	--z-sea: 0;
+	--z-deadsea: -1;
+}
+
+/*---------------------------------------
+    #Fonts imports
+---------------------------------------*/
+@font-face {
+	font-family: "Metropolis";
+	src: url("../fonts/metropolis-regular-webfont.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Metropolis";
+	src: url("../fonts/metropolis-regularitalic-webfont.woff2") format("woff2");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Metropolis";
+	src: url("../fonts/metropolis-bold-webfont.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Metropolis";
+	src: url("../fonts/metropolis-bolditalic-webfont.woff2") format("woff2");
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}

@@ -1,0 +1,39 @@
+/*------------------------------------*\
+    #Buttons
+\*------------------------------------*/
+.o-btn {
+    appearance: none;
+    display: inline-block;
+    appearance: none;
+    line-height: normal;
+    cursor: pointer;
+
+    padding: var(--btn-padding-v) var(--btn-padding-h);
+    border: var(--btn-border-width) solid var(--c-brand);
+    border-radius: var(--base-border-radius);
+    background: var(--c-brand);
+    font-size: var(--base-font-size);
+    color: var(--c-grey--dark);
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+    &:focus {
+        outline: none;
+    }
+
+    /* block button */
+    &--block {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* blank btn */
+    &--blank {
+        padding: 0;
+        background: transparent none;
+        border: 0;
+    }
+}
