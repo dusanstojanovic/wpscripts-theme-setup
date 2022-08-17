@@ -10,16 +10,16 @@
 	&__group {
 		display: block;
 	}
-	/*------------------------------------*\
-        #label
-    \*------------------------------------*/
+	/*---------------------------------------
+		label
+	---------------------------------------*/
 	&__label {
 		display: block;
 	}
 
-	/*------------------------------------*\
-        #form controls
-    \*------------------------------------*/
+	/*---------------------------------------
+		form controls
+	---------------------------------------*/
 	&__control {
 		appearance: none;
 		width: 100%;
@@ -32,9 +32,9 @@
 		padding: var(--form-padding);
 		transition: var(--base-transition-time);
 
-		/*------------------------------------*\
-            #radios & checkboxes
-        \*------------------------------------*/
+		/*---------------------------------------
+			radios & checkboxes
+		---------------------------------------*/
 		@at-root label#{&} {
 			position: relative;
 			display: inline-block;
@@ -116,6 +116,6 @@
     autofill
 ---------------------------------------*/
 input:-webkit-autofill {
-	box-shadow: inset 0 0 0px 9999px rgb(217, 105, 16);
-	-webkit-box-shadow: inset 0 0 0px 9999px rgb(217, 105, 16);
+	box-shadow: inset 0 0 0px 9999px rgb(255, 255, 255);
+	-webkit-box-shadow: inset 0 0 0px 9999px rgb(255, 255, 255);
 }

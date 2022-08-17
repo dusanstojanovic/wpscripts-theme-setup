@@ -2,33 +2,33 @@
     Containers
 ---------------------------------------*/
 .o-container {
-    max-width: 2560px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: auto;
+	max-width: 2560px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: auto;
 
-    /* md */
-    &--md {
-        max-width: calc(1200px + 2 * 20px);
-    }
+	/* md */
+	&--md {
+		max-width: calc(1200px + 2 * 20px);
+	}
 
-    /* sm */
-    &--sm {
-        max-width: calc(768px + 2 * 20px);
-    }
+	/* sm */
+	&--sm {
+		max-width: calc(768px + 2 * 20px);
+	}
 
-    @include bp(bp1024) {
-        padding-left: 60px;
-        padding-right: 60px;
+	@include bp(bp1024) {
+		padding-left: 60px;
+		padding-right: 60px;
 
-        /* md */
-        &--md {
-            max-width: calc(1200px + 2 * 60px);
-        }
+		/* md */
+		&--md {
+			max-width: calc(1200px + 2 * 60px);
+		}
 
-        /* sm */
-        &--sm {
-            max-width: calc(768px + 2 * 60px);
-        }
-    }
+		/* sm */
+		&--sm {
+			max-width: calc(768px + 2 * 60px);
+		}
+	}
 }

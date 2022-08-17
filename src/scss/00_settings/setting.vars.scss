@@ -28,7 +28,7 @@
 	--c-brand-100: #f1f8cf;
 	--c-brand-200: #e1f1a5;
 	--c-brand-300: #cbe670;
-	--c-brand-400: #bada55; //
+	--c-brand-400: #bada55;
 	--c-brand-500: #96bc26;
 	--c-brand-600: #74961a;
 	--c-brand-700: #587219;
@@ -78,8 +78,8 @@
 	/*------------------------------------*\
         #Fonts
     \*------------------------------------*/
-	--ff--primary: "Metropolis", sans-serif;
-	--ff--secondary: "Metropolis", sans-serif;
+	--ff--primary: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--ff--secondary: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--ff--mono: Monaco, Consolas, "Lucida Console", monospace;
 }
 
@@ -87,29 +87,32 @@
     #Fonts imports
 ---------------------------------------*/
 @font-face {
-	font-family: "Metropolis";
-	src: url("../fonts/metropolis-regular-webfont.woff2") format("woff2");
-	font-weight: normal;
+	font-family: Metropolis;
+	src: url(../fonts/metropolis-regular-webfont.woff2) format("woff2");
+	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
+
 @font-face {
-	font-family: "Metropolis";
-	src: url("../fonts/metropolis-regularitalic-webfont.woff2") format("woff2");
-	font-weight: normal;
+	font-family: Metropolis;
+	src: url(../fonts/metropolis-regularitalic-webfont.woff2) format("woff2");
+	font-weight: 400;
 	font-style: italic;
 	font-display: swap;
 }
+
 @font-face {
-	font-family: "Metropolis";
-	src: url("../fonts/metropolis-bold-webfont.woff2") format("woff2");
+	font-family: Metropolis;
+	src: url(../fonts/metropolis-bold-webfont.woff2) format("woff2");
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
+
 @font-face {
-	font-family: "Metropolis";
-	src: url("../fonts/metropolis-bolditalic-webfont.woff2") format("woff2");
+	font-family: Metropolis;
+	src: url(../fonts/metropolis-bolditalic-webfont.woff2) format("woff2");
 	font-weight: 700;
 	font-style: italic;
 	font-display: swap;
