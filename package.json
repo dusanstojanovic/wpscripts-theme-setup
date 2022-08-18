@@ -19,6 +19,7 @@
   "devDependencies": {
     "@wordpress/scripts": "^23.7.2",
     "autoprefixer": "^10.4.8",
+    "browser-sync-webpack-plugin": "^2.3.0",
     "copy-webpack-plugin": "^11.0.0",
     "dir-archiver": "^1.2.0",
     "mini-css-extract-plugin": "^2.6.1",
@@ -46,8 +47,8 @@
   "browserslist": [
     "> 1%",
     "last 2 versions",
-	"not ie > 0",
-	"not ie_mob > 0"
+    "not ie > 0",
+    "not ie_mob > 0"
   ],
   "scripts": {
     "start": "wp-scripts start",
@@ -57,7 +58,7 @@
     "compile:rtl": "rtlcss style.css style-rtl.css",
     "lint:scss": "wp-scripts lint-style 'src/scss/**/*.scss'",
     "lint:js": "wp-scripts lint-js 'js/*.js'",
-	"lint:js:src": "wp-scripts lint-js ./src",
+    "lint:js:src": "wp-scripts lint-js ./src",
     "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map yarn.lock"
   }
 }

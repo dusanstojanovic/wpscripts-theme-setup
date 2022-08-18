@@ -11,6 +11,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
 	...defaultConfig,
@@ -59,6 +60,20 @@ module.exports = {
 			suppressSuccess: false,
 			successSound: 'tink',
 			failureSound: 'Basso',
+		}),
+		new BrowserSyncPlugin({
+			// prettier-ignore
+			files: [
+				'./../',
+				'./',
+				'!./node_modules',
+				'!./package.json',
+			],
+			reloadDelay: 2,
+			// https: {
+			// 	key: '/Users/dusan/Library/Application Support/Local/run/router/nginx/certs/dtsquared.local.key',
+			// 	cert: '/Users/dusan/Library/Application Support/Local/run/router/nginx/certs/dtsquared.local.crt',
+			// },
 		}),
 	],
 };
