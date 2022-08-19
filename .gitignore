@@ -55,3 +55,5 @@ dist
 /dist/
 build
 /build/
+vendor
+/vendor/
