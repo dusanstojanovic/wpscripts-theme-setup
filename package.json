@@ -17,19 +17,19 @@
     "url": "https://github.com/Automattic/_s/issues"
   },
   "devDependencies": {
-    "@wordpress/scripts": "^23.7.2",
-    "autoprefixer": "^10.4.8",
+    "@wordpress/scripts": "^24.4.0",
+    "autoprefixer": "^10.4.13",
     "browser-sync-webpack-plugin": "^2.3.0",
     "copy-webpack-plugin": "^11.0.0",
-    "dir-archiver": "^1.2.0",
+    "dir-archiver": "^2.1.0",
     "mini-css-extract-plugin": "^2.6.1",
-    "node-sass": "^7.0.1",
+    "node-sass": "^7.0.3",
     "rtlcss": "^4.0.0",
     "svg-spritemap-webpack-plugin": "^4.5.0",
     "webpack-build-notifier": "^2.3.0"
   },
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.1"
   },
   "rtlcssConfig": {
     "options": {
